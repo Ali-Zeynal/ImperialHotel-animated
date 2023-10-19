@@ -212,7 +212,7 @@ function showDo() {
   if (timeNow >= 23 || timeNow < 8) {
     let div = document.querySelector("#table");
     div.innerHTML =
-      "<h1 style='background-color: #5bbefc; margin-top: 300px; font-size: 100px; color : #010072'>پایان زمان بندی</h1>";
+      "<h1 style='background-color: #5bbefc; margin-top: 300px; font-size: 100px; color : #010072 ;padding : 30px; border-radius : 30px;'>پایان زمان بندی</h1>";
   }
 }
 window.addEventListener("load", function () {
