@@ -163,5 +163,10 @@ function showDo() {
   if (daytime == 5) {
     doBox[0].style.backgroundColor = "red";
   }
+  if(timeNow >= 23) {
+    alert("پایان زمان بندی امروز" + '\n' + '\n' + todayTime)
+  }
 }
-showDo();
+window.addEventListener('load', function() {
+  showDo(); 
+})
