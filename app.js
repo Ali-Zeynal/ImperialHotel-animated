@@ -163,10 +163,12 @@ function showDo() {
   if (daytime == 5) {
     doBox[0].style.backgroundColor = "red";
   }
-  if(timeNow >= 23) {
-    alert("پایان زمان بندی امروز" + '\n' + '\n' + todayTime)
+  if (timeNow >= 23) {
+    let div = document.querySelector("#table");
+    div.innerHTML =
+      "<h1 style='background-color:red; margin-top: 300px; font-size:60px;'>پایان زمان بندی</h1>";
   }
 }
-window.addEventListener('load', function() {
-  showDo(); 
-})
+window.addEventListener("load", function () {
+  showDo();
+});
