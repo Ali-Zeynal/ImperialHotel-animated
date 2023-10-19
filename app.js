@@ -1,6 +1,6 @@
 let tdElem = document.querySelectorAll("#DoNow");
-let todayTime = new Date();
-// "October 20, 2023 17:13:00" in Date() for test
+let todayTime = new Date("October 20, 2023 17:13:00");
+//  in Date() for test
 let daytime = todayTime.getDay();
 let hourTime = todayTime.getHours();
 let minutesTime = todayTime.getMinutes();
