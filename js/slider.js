@@ -3,9 +3,9 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   effect: "fade",
   slidesPerView: 1,
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
 
   pagination: {
     el: ".swiper-pagination",
