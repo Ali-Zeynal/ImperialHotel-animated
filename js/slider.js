@@ -2,7 +2,6 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   effect: "fade",
-  slidesPerView: 1,
   autoplay: {
     delay: 3000,
   },
