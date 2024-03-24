@@ -13,6 +13,13 @@ AOS.init();
 window.addEventListener("load", function () {
   $.querySelector(".loader").style.display = "none";
   $.querySelector("body").style.visibility = "visible";
+  navMenuItem.forEach((item) => {
+  if (window.location.pathname == `/ImperialHotel-animated/${item.attributes.href.nodeValue}`) {
+    item.style.color = "rgb(248, 170, 72)";
+  } else if (!window.location.pathname.slice(15)) {
+    navMenuItem[0].style.color = "rgb(248, 170, 72)";
+  }
+});
 });
 
 if (document.documentElement.clientWidth < 600) {
@@ -51,13 +58,7 @@ toTopBtn.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 
-navMenuItem.forEach((item) => {
-  if (window.location.pathname.slice(15) == item.attributes.href.nodeValue) {
-    item.style.color = "rgb(248, 170, 72)";
-  } else if (!window.location.pathname.slice(15)) {
-    navMenuItem[0].style.color = "rgb(248, 170, 72)";
-  }
-});
+
 
 let brandP1Typewriter = new Typewriter(brandP1, {
   loop: true,
